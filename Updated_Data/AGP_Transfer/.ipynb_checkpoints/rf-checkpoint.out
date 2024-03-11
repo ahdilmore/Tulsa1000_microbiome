@@ -1,0 +1,28 @@
+agp_rf_transfer.py:17: DtypeWarning: Columns (12,17,23,32,34,63,69,85,104,128,129,140,177) have mixed types. Specify dtype option on import or set low_memory=False.
+  full_md = pd.read_csv('agp_metadata.tsv', sep='\t', index_col=0)
+filter done
+loading done
+0
+unfiltered done
+Traceback (most recent call last):
+  File "agp_rf_transfer.py", line 114, in <module>
+    prev_filtered = prev_filter(data_dict[k], 0.05, min_rel_abun = 0)
+  File "agp_rf_transfer.py", line 46, in prev_filter
+    df_new[df_new > min_rel_abun] = 1
+  File "/home/adilmore/anaconda3/envs/qiime2-2022.11/lib/python3.8/site-packages/pandas/core/frame.py", line 3964, in __setitem__
+    self._setitem_frame(key, value)
+  File "/home/adilmore/anaconda3/envs/qiime2-2022.11/lib/python3.8/site-packages/pandas/core/frame.py", line 4087, in _setitem_frame
+    self._where(-key, value, inplace=True)
+  File "/home/adilmore/anaconda3/envs/qiime2-2022.11/lib/python3.8/site-packages/pandas/core/generic.py", line 9733, in _where
+    new_data = self._mgr.putmask(mask=cond, new=other, align=align)
+  File "/home/adilmore/anaconda3/envs/qiime2-2022.11/lib/python3.8/site-packages/pandas/core/internals/managers.py", line 412, in putmask
+    return self.apply(
+  File "/home/adilmore/anaconda3/envs/qiime2-2022.11/lib/python3.8/site-packages/pandas/core/internals/managers.py", line 352, in apply
+    applied = getattr(b, f)(**kwargs)
+  File "/home/adilmore/anaconda3/envs/qiime2-2022.11/lib/python3.8/site-packages/pandas/core/internals/blocks.py", line 1519, in putmask
+    values._putmask(mask, new)
+  File "/home/adilmore/anaconda3/envs/qiime2-2022.11/lib/python3.8/site-packages/pandas/core/arrays/base.py", line 1523, in _putmask
+    self[mask] = val
+  File "/home/adilmore/anaconda3/envs/qiime2-2022.11/lib/python3.8/site-packages/pandas/core/arrays/sparse/array.py", line 616, in __setitem__
+    raise TypeError(msg)
+TypeError: SparseArray does not support item assignment via setitem

@@ -1,0 +1,54 @@
+/panfs/adilmore/agp_comp/agp_rf_transfer.py:37: DtypeWarning: Columns (17,23,32,34,63,85,104,128,129,140,177) have mixed types. Specify dtype option on import or set low_memory=False.
+  md_agp_5000_min = pd.read_csv('agp_metadata_filtered.tsv', sep='\t', index_col=0)
+filter done
+loading done
+0
+unfiltered done
+prev done
+ridge done
+birdman done
+1
+unfiltered done
+prev done
+ridge done
+birdman done
+2
+unfiltered done
+prev done
+ridge done
+birdman done
+3
+unfiltered done
+prev done
+ridge done
+birdman done
+4
+unfiltered done
+prev done
+ridge done
+birdman done
+5
+unfiltered done
+prev done
+ridge done
+birdman done
+6
+unfiltered done
+prev done
+ridge done
+birdman done
+7
+unfiltered done
+prev done
+ridge done
+birdman done
+8
+unfiltered done
+prev done
+ridge done
+birdman done
+9
+unfiltered done
+prev done
+ridge done
+birdman done
